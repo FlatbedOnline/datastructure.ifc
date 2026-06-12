@@ -19,7 +19,6 @@ void push(stack *s, int value){
 
   novo->next = s->top;
   s->top = novo;
-  printf("%d\n", s->top->num);
 }
 
 
@@ -34,7 +33,6 @@ void pop(stack *s){
   node *temp = s->top;
   int deleted = temp->num;
   s->top = temp->next;
-  printf("%d\n", deleted);
   free(temp);
 }
 
